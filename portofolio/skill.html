@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helmy Bima Pratama</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="window-header">
+      <div class="window-controls">
+        <div class="control-dot red"></div>
+        <div class="control-dot yellow"></div>
+        <div class="control-dot green"></div>
+      </div>
+      <div class="window-title">Portofolio Helmy Bima Pratama</div>
+    </div>
+
+    <div class="content-container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./skill.html" class="active">Skill</a></li>
+            <li><a href="./certificate.html">Certificate</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-content">
+        <h1 class="section-title">SKILL</h1>
+        <div class="divider"></div>
+        <div class="skills-list">
+          <ul>
+            <li>Network Simulation (Cisco Packet Tracer / CCNA)</li>
+            <li>Understanding core network concepts, device operations, and basic protocol functions</li>
+            <li>Configuring and managing MikroTik RouterOS for routing, NAT, DHCP, and firewall setup</li>
+            <li>Proficient in using PNETLab for advanced network simulation and troubleshooting</li>
+            <li>Debian 12 virtualization setup and management</li>
+            <li>Setting up and maintaining FTP, Web, and Mail servers (Apache, Nginx, Postfix, cacti, wordpress)</li>
+            <li>Red Hat RHA 204, Core Linux command line and system administration, Network Security Simulation</li>
+            <li>Hands-on experience with cyberattack simulations and security protocols</li>
+            <li>Familiar with leading generative AI platforms and their practical applications</li>
+            <li>Skilled in crafting, organizing, and refining prompts to achieve clear, effective, and high quality outputs from AI tools.</li>
+            <li>Solid understanding of Python syntax, structure, and foundational programming logic</li>
+            <li>Web Design & Development Experienced in creating clean, user friendly websites using HTML, CSS, and basic JavaScript.</li>
+            <li>Crimping UTP cables (Cross & Straight) for real-world network development</li>
+            <li>Proficient in Canva for professional design, editing, and content creation</li>
+            <li>Skilled in Figma for UI/UX design, wireframing, and prototyping web interfaces</li>
+            <li>Experience in digital marketing design (Instagram feeds, posters, and banners)</li>
+            <li>Capable of designing presentation templates and social media visual content</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Animasi masuk bertahap
+    document.addEventListener('DOMContentLoaded', () => {
+      const title = document.querySelector('.section-title');
+      const divider = document.querySelector('.divider');
+      const skillsList = document.querySelector('.skills-list');
+
+      setTimeout(() => title.classList.add('animate-in'), 200);
+      setTimeout(() => divider.classList.add('animate-in'), 500);
+      setTimeout(() => skillsList.classList.add('animate-in'), 700);
+    });
+  </script>
+</body>
+</html>

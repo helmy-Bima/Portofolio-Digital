@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helmy Bima Pratama</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="window-header">
+      <div class="window-controls">
+        <div class="control-dot red"></div>
+        <div class="control-dot yellow"></div>
+        <div class="control-dot green"></div>
+      </div>
+      <div class="window-title">Portofolio Helmy Bima Pratama</div>
+    </div>
+
+    <div class="content-container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="./education.html" class="active">Education</a></li>
+            <li><a href="./skill.html">Skill</a></li>
+            <li><a href="./certificate.html">Certificate</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-content">
+        <h1 class="section-title">EDUCATION</h1>
+        <div class="divider"></div>
+        <p class="intro-text">
+          I am a student at SMK Negeri 1 Nglegok majoring in Computer and Network Engineering (TKJ). I’m passionate about Information Technology, especially programming and digital design. Through school projects and practical sessions, I’ve developed strong teamwork, problem-solving, and network management skills. I believe technology shapes the future, and I’m eager to keep learning, growing, and contributing to innovative IT projects, particularly in information systems or network engineering.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Animasi masuk bertahap
+    document.addEventListener('DOMContentLoaded', () => {
+      const title = document.querySelector('.section-title');
+      const divider = document.querySelector('.divider');
+      const introText = document.querySelector('.intro-text');
+
+      setTimeout(() => title.classList.add('animate-in'), 200);
+      setTimeout(() => divider.classList.add('animate-in'), 500);
+      setTimeout(() => introText.classList.add('animate-in'), 700);
+    });
+  </script>
+  </div>
+</footer>
+</body>
+</html>

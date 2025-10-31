@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helmy Bima Pratama</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="window-header">
+      <div class="window-controls">
+        <div class="control-dot red"></div>
+        <div class="control-dot yellow"></div>
+        <div class="control-dot green"></div>
+      </div>
+      <div class="window-title">Portfolio Digital Helmy Bima Pratama</div>
+    </div>
+
+    <div class="content-container">
+      <div class="sidebar">
+        <div class="profile-container">
+          <img src="./images/Latar Biru Akt. 14.png" alt="Helmy Bima Pratama" class="profile-image" />
+        </div>
+        <div class="name-section">
+          <div class="name">
+            <a href="./index.html">Helmy Bima Pratama</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <h1 class="greeting">Hello!</h1>
+        <div class="divider"></div>
+        <p class="intro-text">
+          Thank you for visiting my portfolio. I created this website to share my journey, work, and the things I've been working on. I hope what I present can inspire you and give you a glimpse into who I am.
+          This portfolio represents not only what I’ve accomplished, but also my continuous growth and curiosity to learn more. 
+          I hope what I share here can inspire others and give you a better understanding of who I am someone who strives to grow, create, and contribute through technology.
+        </p>
+        <!-- Hanya satu tombol, berupa link ke halaman About Me -->
+        <a href="./aboutme.html" class="resume-button">Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const greeting = document.querySelector('.greeting');
+      const divider = document.querySelector('.divider');
+      const introText = document.querySelector('.intro-text');
+      const resumeBtn = document.querySelector('.resume-button');
+
+      setTimeout(() => greeting.classList.add('animate-in'), 200);
+      setTimeout(() => divider.classList.add('animate-in'), 500);
+      setTimeout(() => introText.classList.add('animate-in'), 700);
+      setTimeout(() => resumeBtn.classList.add('animate-in'), 900);
+    });
+
+    // Efek hover pada tombol (sekarang pakai querySelector karena bukan button)
+    document.addEventListener('DOMContentLoaded', () => {
+      const resumeBtn = document.querySelector('.resume-button');
+      if (resumeBtn) {
+        resumeBtn.addEventListener('mouseenter', () => {
+          resumeBtn.style.transform = 'translateY(-3px)';
+        });
+        resumeBtn.addEventListener('mouseleave', () => {
+          resumeBtn.style.transform = 'translateY(0)';
+        });
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      const windowWidth = window.innerWidth;
+      const sidebar = document.querySelector('.sidebar');
+      if (windowWidth <= 768) {
+        sidebar.style.flexDirection = 'row';
+        sidebar.style.justifyContent = 'space-around';
+        sidebar.style.alignItems = 'center';
+      } else {
+        sidebar.style.flexDirection = 'column';
+        sidebar.style.justifyContent = 'space-between';
+        sidebar.style.alignItems = 'center';
+      }
+    });
+  </script>
+</body>
+</html>

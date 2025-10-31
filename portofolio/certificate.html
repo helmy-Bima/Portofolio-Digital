@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helmy Bima Pratama</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="window-header">
+      <div class="window-controls">
+        <div class="control-dot red"></div>
+        <div class="control-dot yellow"></div>
+        <div class="control-dot green"></div>
+      </div>
+      <div class="window-title">Portofolio Helmy Bima Pratama</div>
+    </div>
+
+    <div class="content-container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html">About Me</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./skill.html">Skill</a></li>
+            <li><a href="./certificate.html" class="active">Certificate</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-content">
+        <h1 class="section-title">CERTIFICATE</h1>
+        <div class="divider"></div>
+        <div class="certificates-grid">
+          <!-- Baris 1 -->
+          <div class="cert-item">
+            <img src="./images/network.png" alt="Certificate 1">
+          </div>
+          <div class="cert-item">
+            <img src="./images/linux.png" alt="Certificate 2">
+          </div>
+          <div class="cert-item">
+            <img src="./images/phyton.png" alt="Certificate 3">
+          </div>
+
+          <!-- Baris 2 -->
+          <div class="cert-item">
+            <img src="./images/pnet.png" alt="Certificate 4">
+          </div>
+          <div class="cert-item">
+            <img src="./images/ccna.png" alt="Certificate 5">
+          </div>
+          <div class="cert-item">
+            <img src="./images/vm.png" alt="Certificate 6">
+          </div>
+
+          <!-- Baris 3 -->
+          <div class="cert-item">
+            <img src="./images/ethic ai.png" alt="Certificate 7">
+          </div>
+          <div class="cert-item">
+            <img src="./images/microsoft.png" alt="Certificate 8">
+          </div>
+          <div class="cert-item">
+            <img src="./images/generative ai.png" alt="Certificate 9">
+          </div>
+
+          <!-- Baris 2 -->
+          <div class="cert-item">
+            <img src="./images/cyber 1.0.png" alt="Certificate 4">
+          </div>
+          <div class="cert-item">
+            <img src="./images/cybersecurity 2.0.png" alt="Certificate 5">
+          </div>
+          <div class="cert-item">
+            <img src="./images/TL 2.0.png" alt="Certificate 6">
+          </div>
+
+          <!-- Baris 3 -->
+          <div class="cert-item">
+            <img src="./images/html bima.png" alt="Certificate 7">
+          </div>
+          <div class="cert-item">
+            <img src="./images/rh 204.png" alt="Certificate 8">
+          </div>
+          <div class="cert-item">
+            <img src="./images/html bima.png" alt="Certificate 9">
+          </div>
+
+          <!-- Baris 4 -->
+          <div class="cert-item">
+            <img src="#" alt="Certificate 10">
+          </div>
+          <div class="cert-item">
+            <img src="#" alt="Certificate 10">
+          </div>
+          <div class="cert-item">
+            <img src="#" alt="Certificate 10">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Animasi masuk bertahap
+    document.addEventListener('DOMContentLoaded', () => {
+      const title = document.querySelector('.section-title');
+      const divider = document.querySelector('.divider');
+      const certGrid = document.querySelector('.certificates-grid');
+
+      setTimeout(() => title.classList.add('animate-in'), 200);
+      setTimeout(() => divider.classList.add('animate-in'), 500);
+      setTimeout(() => certGrid.classList.add('animate-in'), 700);
+    });
+  </script>
+</body>
+</html>

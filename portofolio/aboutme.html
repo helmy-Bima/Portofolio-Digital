@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helmy Bima Pratama</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="window">
+    <div class="window-header">
+      <div class="window-controls">
+        <div class="control-dot red"></div>
+        <div class="control-dot yellow"></div>
+        <div class="control-dot green"></div>
+      </div>
+      <div class="window-title">Portofolio Helmy Bima Pratama</div>
+    </div>
+
+    <div class="content-container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutme.html" class="active">About Me</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./skill.html">Skill</a></li>
+            <li><a href="./certificate.html">Certificate</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-content">
+        <h1 class="section-title">ABOUT ME</h1>
+        <div class="divider"></div>
+        <p class="intro-text">
+          Let me introduce myself. My name is Helmy Bima Pratama. I was born and raised in Biltar. I'm easygoing, adaptable, enjoy learning new things, and am open to collaboration. I also really enjoy listening to music and often go to concerts. 
+          Outside of academics, I enjoy listening to music, attending concerts, and spending time exploring new ideas or collaborating on creative projects. 
+          I believe that continuous learning, curiosity, and collaboration are the keys to success in both technology and life. 
+          Through this portfolio, I hope to share not only my technical skills but also the enthusiasm and creativity that I bring to everything I do.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Animasi masuk bertahap
+    document.addEventListener('DOMContentLoaded', () => {
+      const title = document.querySelector('.section-title');
+      const divider = document.querySelector('.divider');
+      const introText = document.querySelector('.intro-text');
+
+      setTimeout(() => title.classList.add('animate-in'), 200);
+      setTimeout(() => divider.classList.add('animate-in'), 500);
+      setTimeout(() => introText.classList.add('animate-in'), 700);
+    });
+
+    // Efek hover pada menu sidebar — CSS murni lebih stabil
+    document.querySelectorAll('.sidebar a').forEach(link => {
+      link.addEventListener('mouseenter', () => {
+        link.style.color = '#64b5f6';
+        link.style.textDecoration = 'underline';
+      });
+      link.addEventListener('mouseleave', () => {
+        if (!link.classList.contains('active')) {
+          link.style.color = '#2c3e50';
+          link.style.textDecoration = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
